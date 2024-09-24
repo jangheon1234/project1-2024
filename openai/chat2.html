@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"> </script> 
+    <title>OpenAI API 예제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #responseOutput {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>OpenAI API 예제</h1>
+    <div>
+        <label for="userInput">질문 입력:</label><br>
+        <textarea id="userInput" rows="4" cols="50" placeholder="질문을 입력하세요..."></textarea>
+    </div>
+    <div>
+        <label for="modelSelect">API 모델 선택:</label>
+        <select id="modelSelect">
+            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+            <option value="gpt-4o-mini">GPT-4mini</option>
+            <!-- 필요한 모델 추가 가능 -->
+        </select>
+    </div>
+    <button onclick="talk()" id="submitBtn">제출</button>
+    <h2>응답:</h2>
+    <pre id="responseOutput"></pre>
+
+    <script src="chat2.js">
+        // JavaScript 코드는 이곳에 추가하면 됩니다.
+    </script>
+</body>
+</html>
