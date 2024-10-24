@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT 개발</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"> </script> 
+    <script src="vision.js"></script>
+</head>
+<body>
+
+    <h1>2021143016이장헌중간고사 대체 과제 </h1>
+
+    <input type="file" onchange="uploadFiles(this.files)">
+    <input type="button" onclick="analyze()" value="이미지 분석">
+
+    <img id="gimage" style="border:5px solid #555" width="300px" height="300px">
+    
+    <h2>분석 결과</h2>
+    <textarea id="result" cols="40" rows="10"></textarea>
+
+</body>
+</html>
